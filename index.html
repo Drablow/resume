@@ -7,71 +7,182 @@
     <meta name="keywords" content="valera, cv, resume">
     <meta name="description" content="Это сайт резюме Валерия Вершкова">
     <title>Valera Resume</title>
+
+    <style>
+        .scale {
+         transition: 2s; 
+        }
+        .scale:hover {
+         transform: scale(2); 
+        }
+       </style>
+    <link rel="stylesheet" href="styles.css">
+    <script
+        type="text/javascript"
+        src="https://vk.com/js/api/openapi.js?168"
+        charset="windows-1251">       
+    </script>
 </head>
 <body>
-    <img src="https://sun9-13.userapi.com/impf/C14_vr6AtXwrnzN6D9P2SE6O5N4ostuegIC_Kg/8WLrnpH9LKw.jpg?size=1280x853&quality=96&sign=c88c5f580cb0fffd84dab1fadfd72461&type=album" 
-    width="300" alt="Мое фото">
-    <h1>Валерий Вершков</h1>
-    <p>Я начинающий <strong>программист</strong></p>
-    <p>Я люблю <em>программировать</em> </p>
-    <h4><strong>Список социальных сетей</strong></h4>
-    <a href="https://vk.com/id82899176" target="_blank">ВК</a>
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Велопутешествия</li>
-        <li>Музыка</li>
-        <li>IOT</li>
-        
-    </ol>
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-            <tbody>
-                <tr>
-                    <td>ООО Nestle</td>
-                    <td>программист</td>
-                    <td>2017-2018</td>
-                </tr>
-                <tr>
-                    <td>ООО Техмонтаж</td>
-                    <td>программист-инженер</td>
-                    <td>2018-2021</td>
-                </tr>
-                <tr>
-                    <td>ООО Техмонтаж</td>
-                    <td>Начальник IT отдела</td>
-                    <td>2021-сейчас</td>
-                </tr>
-            </tbody>
-        </thead>
-    </table>
-    <h2>Связаться со мной</h2>
+    <div class="container">
 
-    <form>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+        <div class="info">
+            <img src="https://sun9-85.userapi.com/impf/c845420/v845420815/74a4b/0Vxe9r7zPHI.jpg?size=1280x853&quality=96&sign=0fb5b3ea46fb6f64dbd5d78bf8b1c0dc&type=album" 
+             alt="Мое фото" class="avatar">
+             
+
+            
+            <div class="info-text">
+                <h1>Валерий Вершков</h1>
+                
+                <p>Я программист <strong>IOT</strong>- вещей</p>
+                
+                <p>Музыкант <em>самоучка</em> </p>
+
+                <p>И люблю фото</p>
+                
+                <h4><strong>Список социальных сетей</strong></h4>
+                
+                <a href="https://vk.com/id82899176" target="_blank">ВК</a>
+            </div>
         </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
 
+        <div class="card bg-sky">
+
+            <h2> Мои хобби</h2>
+            <ol class="list">
+                <li>Программирование IOT</li> 
+                <li>Велосипеды</li>
+                <li>Музыка</li>
+                <li>Путешествия</li>
+                <li>Фотография</li>
+                
+                
+            </ol>
+            </div>
+
+            <div class="card bg-foto">
+
+                <h2> Фото</h2>
+                <div class="foto">
+                    <img src="lodka.jpg" alt="" width="160" height="160" class="scale"> 
+                    <img src="volga.jpg" alt="" width="160" height="160" class="scale">
+                    <img src="forest.jpg" alt="" width="160" height="160" class="scale">
+                    <img src="book.jpg" alt="" width="160" height="160" class="scale">
+                </div>
+            </div>
+           
+
+        <div class="card bg-red">    
+            
+            <h2>Опыт работы</h2>
+
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                    <tbody> -->
+                        <tr>
+                            <td>ООО Nestle</td>
+                            <td>программист</td>
+                            <td>2017-2018</td>
+                        </tr>
+                        <tr>
+                            <td>ООО Техмонтаж</td>
+                            <td>программист-инженер</td>
+                            <td>2018-2021</td>
+                        </tr>
+                        <tr>
+                            <td>ООО Техмонтаж</td>
+                            <td>Начальник IT отдела</td>
+                            <td>2021-сейчас</td>
+                        </tr>
+                    </tbody>
+                </thead>
+            </table>
         </div>
-        
-        <div>
-            <label for="message">Ваше сообщение</label>
-            <br>
-            <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
 
+        <div class="card bg-yellow">
+            <h2>Моя музыка</h2>
+
+            <iframe width="710" height="400" src="https://www.youtube.com/embed/SXWCVD1hnyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+            
+            <div id='vk_playlist_-165071926_1'></div>
+                <script type="text/javascript">
+                VK.Widgets.Playlist('vk_playlist_-165071926_1', -165071926, 1, 'be01e981d07e6bb92a');
+                </script>
+
+            <ul class="link-list" >
+                <h3>Обложки</h3>
+                <hr>
+                <li>
+                    
+                    <img src="https://sun9-40.userapi.com/impf/c834200/v834200220/134f79/lOQ9jNPl4lI.jpg?size=1280x618&quality=96&sign=6af374c50652f00edd8c11ef3c6dd888&type=album" 
+                        alt="" class="albom" width="160" height="160" >
+            <a href="#">Ocean</a>
+                </li>
+                <li>
+                    
+                    <img src="https://sun9-80.userapi.com/impf/c831508/v831508532/125e30/ZbubRSTG-ww.jpg?size=990x666&quality=96&sign=f67662e6f40818ef68fc24b31ab8ced4&type=album" 
+                        alt="" class="albom"  width="160" height="160">
+            <a href="#">Space</a>
+                </li>
+                <li>
+                    
+                    <img src="https://sun9-72.userapi.com/impf/c830308/v830308266/19366c/TXgFfvB3FMA.jpg?size=1047x1080&quality=96&sign=3c038ac42da2f7491767dc9ad3775543&type=album" 
+                        alt="" class="albom"  width="160" height="160">
+                    <a href="#">Rainy Albion</a>
+                </li>
+                <li>
+                    
+                    <img src="https://sun9-73.userapi.com/impf/c851424/v851424190/f9ff4/FI3ewCG4PNQ.jpg?size=1080x1080&quality=96&sign=2c454f7db73c8310dbca968176296e15&type=album" 
+                    alt="" class="albom"  width="160" height="160">
+                    <a href="#">Pulsar</a>
+                </li>
+                <li>
+                    
+                    <img src="https://sun9-20.userapi.com/impf/c858136/v858136857/115a5/Nu4p_QHSCCg.jpg?size=1080x810&quality=96&sign=b22ac6afc2245584ff4bb0884be4d7a6&type=album" 
+                    alt="" class="albom"  width="160" height="160">
+                    <a href="#">Conversation</a>
+                </li>
+            </ul>
         </div>
-        <input type="submit" value="Отправить!">
 
-    </form>
+
+
+        <div class="card bg-yellow">
+            
+
+            <form action="/" class="form">
+                <h2>Связаться со мной</h2>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение</label>
+                    <br>
+                    <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+
+                </div>
+                <input class="btn" type="submit" value="Отправить!">
+
+            </form>
+        </div>
+</div>
 </body>
 </html>
