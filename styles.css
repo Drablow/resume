@@ -43,11 +43,11 @@ a:active {
 
 .albomstyle {
     border: 1px solid black;
-                padding: 15px 20px;
-                border-radius: 20px;
-                background: transparent;
-                cursor: pointer;
-                outline: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
 }
 
 
@@ -71,7 +71,7 @@ a:active {
     margin-bottom: 10px;
 }
 
-@media (max-width: 650px){
+@media (max-width: 650px) {
     .info {
         display: block;
         text-align: center;
@@ -80,11 +80,11 @@ a:active {
 
 
 .card {
-    
+
     border-radius: 20px;
     padding: 15px 20px;
     margin-bottom: 20px;
-    
+
 }
 
 .card h2 {
@@ -106,7 +106,7 @@ a:active {
 
 .bg-sky {
     /* background: #e5ffe7; */
-    background-image: url(volga.jpg);
+    background-image: url(image/volga.jpg);
     /* background-repeat: no-repeat; */
     background-position: center center;
     background-attachment: fixed;
@@ -119,8 +119,9 @@ a:active {
 
 .foto {
     margin: 25px;
-    
+
 }
+
 .bg-foto {
 
     background: #ffffff;
@@ -130,8 +131,9 @@ a:active {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
-    overflow:hidden;
+    overflow: hidden;
 }
+
 .video-responsive iframe,
 .video-responsive object,
 .video-responsive embed {
@@ -151,7 +153,7 @@ a:active {
     border-radius: 5px;
 }
 
-.btn:hover{
+.btn:hover {
     opacity: .8;
 }
 
@@ -192,7 +194,7 @@ a:active {
     color: #86898f;
 }
 
-.form h2{
+.form h2 {
     text-align: center;
 }
 
@@ -202,21 +204,22 @@ a:active {
     width: 50%;
 }
 
-.form-row .form-group{
+.form-row .form-group {
     /* display: inline-block; */
     margin-right: 20px;
     /* width: calc(50%-20px); */
 }
 
 
-.form-row .form-group:last-child{
+.form-row .form-group:last-child {
     margin-right: 0;
 }
 
-@media (max-width:650px) {
+@media (max-width: 650px) {
     .form-row {
         display: block;
     }
+
     .form-row .form-group {
         width: 100%;
         margin-right: 0;
@@ -230,7 +233,6 @@ a:active {
     font-size: 14px;
     color: #86898f;
 }
-
 
 
 .form-group input,
